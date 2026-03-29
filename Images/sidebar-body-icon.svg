@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="17px" viewBox="0 0 9 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="DESIGNS-FOR-BUILD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mega-Menu---Mobile---State-2" transform="translate(-88.000000, -74.000000)" fill="#333333" fill-rule="nonzero">
+            <g id="Navigation-items" transform="translate(88.000000, 47.000000)">
+                <g id="Who-we-are">
+                    <path d="M5.08557168,40 C4.90464662,40 4.72372156,39.9353409 4.5762624,39.8049359 L-3.72485134,32.4348805 C-4.05428137,32.142556 -4.09349923,31.6279996 -3.81217645,31.2856866 C-3.53033076,30.9433735 -3.03513991,30.9031652 -2.70623279,31.1949464 L5.04530801,38.0765264 L11.6626683,31.237328 C11.9690905,30.9200092 12.466373,30.9210959 12.7717494,31.2405882 C13.0771258,31.559537 13.07608,32.0757234 12.7686119,32.3930423 L5.63880496,39.7625542 C5.48663966,39.9201269 5.28636712,40 5.08557168,40 Z" id="Path" transform="translate(4.500000, 35.500000) scale(-1, 1) rotate(-270.000000) translate(-4.500000, -35.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
