@@ -187,16 +187,24 @@ header {
 .navbar-main-inner {
   max-width: 1200px;
   height: 100%;
-  margin: 0 auto;
+  margin: 0px 200px 0px 190px;
   padding-bottom: 3.5rem;
   padding-top: 3.5rem;
-  padding-left: 3.5rem;
-  padding-right: 4rem;
   display: flex;
   align-items: center;
+  gap: 1rem;
   justify-content: space-between;
 }
-
+@media (min-width: 1225px) and (max-width: 1200px) {
+  .navbar-main-inner {
+    margin: 0px 80px 0px 140px;
+  }
+}
+@media (max-width: 1225px) {
+  .navbar-main-inner {
+    margin: 0px 80px 0px 100px;
+  }
+}
 /* Logo */
 .logo-link {
   text-decoration: none;
@@ -227,7 +235,7 @@ header {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2rem;
 }
 
 .nav-link {
@@ -235,7 +243,6 @@ header {
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12.5px;
-  letter-spacing: 0.06em;
   white-space: nowrap;
   transition: color 0.2s ease;
   position: relative;
@@ -545,7 +552,7 @@ header {
     transform: translateX(0px);
   }
   .sidebar-child {
-    height: 95vh;
+    height: 93vh;
     display: flex;
     flex-flow: column nowrap;
     background-color: white;
@@ -798,12 +805,15 @@ header {
 
 .hero-overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: linear-gradient(
     to bottom,
-    rgba(20, 20, 20, 0.75) 0%,
-    rgba(20, 20, 20, 0.4) 50%,
-    rgba(20, 20, 20, 0.2) 100%
+    rgba(25, 25, 25, 5) 0%,
+    rgba(15, 20, 30, 0.5) 45%,
+    rgba(15, 15, 20, 0.6) 100%
   );
   z-index: 1;
 }
@@ -836,7 +846,7 @@ header {
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 100;
+  z-index: 50;
 }
 
 .hero-icon-child {
@@ -893,7 +903,7 @@ header {
     padding: 0 0 160px 10%;
   }
   .hero-text h1 {
-    font-size: 56px;
+    font-size: 64px;
   }
   .hero-icon {
     width: 50px;
