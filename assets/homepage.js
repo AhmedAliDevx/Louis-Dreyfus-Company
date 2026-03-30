@@ -128,6 +128,16 @@ document.getElementById("Ingredients").addEventListener("click", (e) => {
   document.getElementById("Gc_Dropdown_Ingredients").classList.toggle("active");
 });
 
+document
+  .querySelector(".language-container-link")
+  .addEventListener("click", (e) => {
+    e.stopPropagation();
+    document.querySelector(".lcd-parent").classList.toggle("active");
+  });
+document.addEventListener("click", () => {
+  document.querySelector(".lcd-parent")?.classList.remove("active");
+});
+
 const shareToggle = document.getElementById("share-toggle");
 const secondIconChild = document.querySelector(".hero-icon-second-child");
 
