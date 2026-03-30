@@ -577,7 +577,6 @@ header {
   }
   .sidebar-footer {
     background-color: var(--topbar-bg);
-    height: 155px;
     margin-top: auto;
     position: relative;
     z-index: 300;
@@ -626,7 +625,7 @@ header {
   }
 
   .body-grandchild-inner-container {
-    height: calc(100vh - 50px - 155px);
+    height: calc(112vh - 50px - 155px);
     width: 300px;
     display: flex;
     flex-flow: column nowrap;
@@ -742,90 +741,6 @@ header {
     margin: 1rem;
     display: flex;
     flex-flow: column nowrap;
-  }
-  .access-container {
-    border-bottom: 1px solid var(--custom-bottom-border);
-    padding-bottom: 1rem;
-  }
-  .access-container-link {
-    color: var(--font-color);
-    letter-spacing: 0;
-    text-decoration: none;
-    font-size: 12px;
-    text-transform: capitalize;
-  }
-
-  .language-container {
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    width: 100%;
-    border-bottom: 1px solid var(--custom-bottom-border);
-  }
-  .language-container-link {
-    width: 100%;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-  }
-  .lc-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .lc-link-image {
-    width: 25px;
-    height: 25px;
-  }
-  .lc-link-text {
-    color: var(--font-color);
-    font-size: 17px;
-  }
-  .lc-link-icon {
-    background-color: transparent;
-    border: none;
-  }
-  .lc-link-icon svg {
-    width: 30px;
-    fill: none;
-    stroke: white;
-    height: 30px;
-    transform: rotate(270deg);
-  }
-
-  .lcd-parent {
-    position: absolute;
-    top: -85px;
-    left: -5px;
-    display: none;
-  }
-  .lcd-parent.active {
-    display: block;
-  }
-  .lcd-child {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 150px;
-    background-color: var(--search-btn-bg);
-  }
-  .lcd-link {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    /* padding: 8px 20px; */
-    font-size: 13px;
-    transition: color 0.2s ease;
-  }
-  .lcd-link:hover,
-  .lcd-link:focus,
-  .lcd-link:active {
-    color: var(--font-color);
   }
   .social-icon-container {
     padding-top: 10px;

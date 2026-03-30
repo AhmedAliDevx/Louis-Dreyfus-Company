@@ -1,59 +1,39 @@
-const button = document.getElementById("language-dropdown-button");
-const dropdown = document.querySelector(".language-dropdown-parent");
-button.addEventListener("click", (e) => {
-  e.stopPropagation();
-  dropdown.classList.toggle("active");
-});
-document.addEventListener("click", () => {
-  dropdown.classList.remove("active");
-});
+const form = document.getElementById("contactForm");
+const toast = document.getElementById("toast");
 
-const searchButton = document.querySelector(".search-button");
-const crossButton = document.querySelector(".btn-close");
-const searchbar = document.querySelector(".searchbar-parent");
-const serachbarIcon = document.querySelector(".searchbar-icon");
-const backdrop = document.getElementById("search-backdrop");
-const searchField = document.getElementById("searchField");
-const recommended = document.getElementById("recommended");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-function openSearch() {
-  searchbar.classList.add("active");
-  backdrop.classList.add("active");
+  const required = form.querySelectorAll("[required]");
+  let valid = true;
+  required.forEach((el) => {
+    el.style.borderColor = "";
+    if (!el.value || (el.type === "checkbox" && !el.checked)) {
+      el.style.borderColor = "#e05252";
+      valid = false;
+    }
+  });
+  if (!valid) return;
+
+  const btn = form.querySelector(".btn-submit");
+  btn.textContent = "Sending…";
+  btn.style.opacity = ".7";
+  btn.disabled = true;
 
   setTimeout(() => {
-    searchField.classList.add("show");
-    recommended.classList.add("show");
-  }, 150);
-}
+    form.reset();
+    btn.textContent = "Send Message →";
+    btn.style.opacity = "1";
+    btn.disabled = false;
 
-function closeSearch() {
-  searchField.classList.remove("show");
-  recommended.classList.remove("show");
-  searchbar.classList.remove("active");
-  backdrop.classList.remove("active");
-}
-
-searchButton.addEventListener("click", (e) => {
-  e.stopPropagation();
-  openSearch();
+    toast.classList.add("show");
+    setTimeout(() => toast.classList.remove("show"), 4000);
+  }, 1200);
 });
-
-serachbarIcon.addEventListener("click", (e) => {
-  e.stopPropagation();
-  openSearch();
-});
-
-crossButton.addEventListener("click", () => closeSearch());
-backdrop.addEventListener("click", () => closeSearch());
-
-searchbar.addEventListener("click", (e) => e.stopPropagation());
-
-document.addEventListener("click", () => closeSearch());
 
 const HambugerMenu = document.querySelector(".menu-icon");
 const sideBar = document.querySelector(".sidebar-parent");
 HambugerMenu.addEventListener("click", () => {
-  serachbarIcon.classList.toggle("active");
   HambugerMenu.classList.toggle("active");
   sideBar.classList.toggle("active");
 
