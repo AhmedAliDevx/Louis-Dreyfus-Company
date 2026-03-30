@@ -548,8 +548,8 @@ header {
     position: fixed;
     top: 50px;
     right: 0;
-    width: 300px;
     bottom: 0;
+    width: 300px;
     transform: translateX(500px);
     transition: all 0.4s ease-in-out;
     z-index: 100;
@@ -558,7 +558,8 @@ header {
     transform: translateX(0px);
   }
   .sidebar-child {
-    height: 93vh;
+    height: 100%;
+    overflow-y: auto;
     display: flex;
     flex-flow: column nowrap;
     background-color: white;
@@ -566,6 +567,8 @@ header {
   .sidebar-body {
     display: flex;
     flex-flow: column nowrap;
+    flex: 1;
+    overflow-y: auto;
   }
   .sidebar-footer {
     background-color: var(--topbar-bg);
@@ -573,6 +576,7 @@ header {
     margin-top: auto;
     position: relative;
     z-index: 300;
+    flex-shrink: 0;
   }
   .sidebar-body-child {
     padding-left: 1rem;
@@ -729,7 +733,8 @@ header {
     transform-origin: center center;
   }
   .sidebar-footer-child {
-    padding: 1rem 10px 3rem 10px;
+    /* padding: 1rem 10px 3rem 10px; */
+    margin: 1rem;
     display: flex;
     flex-flow: column nowrap;
   }
@@ -828,6 +833,7 @@ header {
     height: 30px;
   }
 }
+
 .hero {
   position: relative;
   width: 100%;
@@ -955,7 +961,6 @@ header {
     height: 30px;
   }
 }
-
 @media (max-width: 768px) {
   .hero {
     height: 550px;
