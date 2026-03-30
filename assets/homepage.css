@@ -36,6 +36,7 @@ header {
   overflow: visible;
   position: relative;
   z-index: 200;
+  display: none;
 }
 .topbar-inner {
   max-width: 1220px;
@@ -49,6 +50,7 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: var(--font-color);
+  display: none;
 }
 .topbar-inner-2-parent {
   display: none;
@@ -455,6 +457,9 @@ header {
   background: #e8e5e0;
 }
 @media (max-width: 990px) {
+  .topbar {
+    display: block;
+  }
   .searchbar-parent {
     width: 300px;
   }
