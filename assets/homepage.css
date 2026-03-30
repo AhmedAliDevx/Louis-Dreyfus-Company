@@ -187,7 +187,7 @@ header {
 .navbar-main-inner {
   max-width: 1200px;
   height: 100%;
-  margin: 0px 200px 0px 190px;
+  margin: -3px 200px 0px 190px;
   padding-bottom: 3.5rem;
   padding-top: 3.5rem;
   display: flex;
@@ -200,7 +200,12 @@ header {
     margin: 0px 80px 0px 140px;
   }
 }
-@media (max-width: 1225px) {
+@media (min-width: 1025px) and (max-width: 1225px) {
+  .navbar-main-inner {
+    margin: 0px 80px 0px 140px;
+  }
+}
+@media (max-width: 1025px) {
   .navbar-main-inner {
     margin: 0px 80px 0px 100px;
   }
@@ -211,6 +216,7 @@ header {
   display: flex;
   flex-direction: column;
   line-height: 1;
+  padding-left: 3px;
   flex-shrink: 0;
 }
 
