@@ -1,7 +1,7 @@
 .section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 45px 80px;
+  padding: 60px 45px 80px;
 }
 
 .intro-text {
@@ -265,7 +265,6 @@
     padding: 70px 6% 70px 8%;
     max-width: 700px;
   }
-
   .operations-title {
     font-size: 44px;
   }
@@ -280,7 +279,6 @@
     padding: 60px 6% 60px 6%;
     max-width: 100%;
   }
-
   .operations-title {
     font-size: 38px;
     margin-bottom: 24px;
@@ -288,9 +286,15 @@
 
   .operations-text {
     font-size: 15px;
+    max-width: 600px;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 660px) {
+  .operations-text {
+    max-width: 550px;
+  }
+}
+@media (max-width: 595px) {
   .operations-content {
     padding: 50px 5% 50px 5%;
   }
@@ -301,7 +305,23 @@
 
   .operations-text {
     font-size: 14px;
+    max-width: 450px;
     line-height: 1.65;
+  }
+}
+@media (max-width: 480px) {
+  .operations-text {
+    max-width: 400px;
+  }
+}
+@media (max-width: 415px) {
+  .operations-text {
+    max-width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .operations-text {
+    max-width: 270px;
   }
 }
 
