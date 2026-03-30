@@ -168,7 +168,7 @@ nav {
 .hero-desc {
   font-size: 0.98rem;
   font-weight: 300;
-  color: rgba(118, 74, 74, 0.6);
+  color: var(--green);
   max-width: 520px;
   line-height: 1.75;
 }
