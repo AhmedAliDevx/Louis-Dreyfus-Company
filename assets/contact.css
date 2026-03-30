@@ -168,7 +168,7 @@ nav {
 .hero-desc {
   font-size: 0.98rem;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(118, 74, 74, 0.6);
   max-width: 520px;
   line-height: 1.75;
 }
@@ -340,6 +340,7 @@ nav {
   background: var(--navy);
   border-color: transparent;
   color: var(--white);
+  display: none;
 }
 .info-card h3 {
   font-family: var(--font-disp);
