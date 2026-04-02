@@ -99,9 +99,16 @@ nav {
 .nav-links a.active {
   color: var(--white);
 }
-.nav-links a.active {
+.nav-links a:hover {
   border-bottom: 2px solid var(--green);
   padding-bottom: 2px;
+}
+.logo-img {
+  height: 100px;
+  width: auto;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .menu-icon {
   display: none;
