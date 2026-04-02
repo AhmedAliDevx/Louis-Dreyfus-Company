@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --topbar-bg: #32556e;
   --topbar-border: #4e718a;
@@ -16,6 +15,9 @@
   --custom-bottom-border: hsla(0, 0%, 94%, 0.15);
   --font-disp: "Playfair Display", Georgia, serif;
   --font-body: "DM Sans", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
   width: 100%;
@@ -379,6 +381,7 @@ header {
     width: 300px;
   }
   .topbar {
+    position: fixed;
     height: auto;
   }
   .topbar-inner {

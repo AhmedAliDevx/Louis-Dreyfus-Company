@@ -78,6 +78,7 @@ body {
 .footer-nav a:hover {
   color: var(--cream);
   gap: 0.5rem;
+  text-decoration: underline;
 }
 .footer-nav a:hover::before {
   width: 16px;

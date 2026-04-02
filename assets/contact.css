@@ -815,6 +815,8 @@ nav {
   font-size: 13px;
   color: var(--green);
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   transition: color 0.2s;
 }
 

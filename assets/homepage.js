@@ -5,7 +5,6 @@ const serachbarIcon = document.querySelector(".searchbar-icon");
 const backdrop = document.getElementById("search-backdrop");
 const searchField = document.getElementById("searchField");
 const recommended = document.getElementById("recommended");
-
 function openSearch() {
   searchbar.classList.add("active");
   backdrop.classList.add("active");
@@ -32,7 +31,6 @@ serachbarIcon.addEventListener("click", (e) => {
   e.stopPropagation();
   openSearch();
 });
-
 crossButton.addEventListener("click", () => closeSearch());
 backdrop.addEventListener("click", () => closeSearch());
 
@@ -42,7 +40,8 @@ document.addEventListener("click", () => closeSearch());
 
 const HambugerMenu = document.querySelector(".menu-icon");
 const sideBar = document.querySelector(".sidebar-parent");
-HambugerMenu.addEventListener("click", () => {
+HambugerMenu.addEventListener("click", (e) => {
+  e.stopPropagation();
   serachbarIcon.classList.toggle("active");
   HambugerMenu.classList.toggle("active");
   sideBar.classList.toggle("active");
@@ -60,4 +59,13 @@ HambugerMenu.addEventListener("click", () => {
   } else {
     UnlockScroll();
   }
+});
+searchField.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+sideBar.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+document.addEventListener("click", () => {
+  sideBar.classList.remove("active");
 });
