@@ -271,8 +271,6 @@ function navigateToProduct(productName) {
       const container = div.closest(".product-container");
       if (container) {
         container.scrollIntoView({ behavior: "smooth", block: "start" });
-        container.style.transition = "outline 0.3s";
-        container.style.outline = "1px solid #4a5e7a";
         setTimeout(() => {
           container.style.outline = "none";
         }, 1800);
