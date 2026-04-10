@@ -1,4 +1,4 @@
-const io = new IntersectionObserver(
+/* const io = new IntersectionObserver(
   (entries) => {
     entries.forEach((e) => {
       if (e.isIntersecting) {
@@ -10,3 +10,4 @@ const io = new IntersectionObserver(
   { threshold: 0.1 },
 );
 document.querySelectorAll(".expertise-section").forEach((el) => io.observe(el));
+ */
