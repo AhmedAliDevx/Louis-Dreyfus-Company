@@ -4,6 +4,7 @@ const searchbar = document.querySelector(".searchbar-parent");
 const serachbarIcon = document.querySelector(".searchbar-icon");
 const backdrop = document.getElementById("search-backdrop");
 const searchField = document.getElementById("searchField");
+const searchbarIcon = document.querySelector(".searchbar-icon");
 const recommended = document.getElementById("recommended");
 function openSearch() {
   searchbar.classList.add("active");
@@ -41,6 +42,7 @@ const HambugerMenu = document.querySelector(".menu-icon");
 const sideBar = document.querySelector(".sidebar-parent");
 HambugerMenu.addEventListener("click", (e) => {
   e.stopPropagation();
+  serachbarIcon.classList.add("active");
   HambugerMenu.classList.toggle("active");
   sideBar.classList.toggle("active");
 

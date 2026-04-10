@@ -8,45 +8,55 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/contact.css" />
+    <link rel="stylesheet" href="assets/homepage.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html" class="nav-logo">
-          <img
-            src="Images/Ibrion Chemicals LLC logo design.png"
-            alt="Ibrion Chemicals LLC Logo"
-            class="logo-img"
-          />
-        </a>
-        <ul class="nav-links">
-          <li><a href="index.html">Who We Are</a></li>
-          <li><a href="expertise.html">Our Expertise</a></li>
-          <li><a href="products.html">Our Products</a></li>
-        </ul>
-        <div class="menu-icon">
-          <span></span>
-          <span></span>
+      <div class="topbar">
+        <div class="topbar-inner-2-parent">
+          <div class="topbar-inner-2-child">
+            <div class="inner-2-logo">
+              <a href="index.html" class="ldc-logo">
+                <img
+                  src="./Images/Ibrion Chemicals LLC logo design.png"
+                  alt="LDC Logo"
+                  class="logo-img-2"
+                />
+              </a>
+            </div>
+            <div class="inner-2-icon">
+              <div class="menu-icon">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
         </div>
-      </nav>
+      </div>
       <div class="sidebar-parent">
         <div class="sidebar-child">
           <div class="sidebar-body">
             <div class="sidebar-body-child">
-              <a href="index.html" class="sb-body-child-link" id="fourth">
+              <a href="index.html" class="sb-body-child-link" id="first">
                 Who We Are
               </a>
             </div>
             <div class="sidebar-body-child">
-              <a href="products.html" class="sb-body-child-link"
-                >Our Products
+              <a href="products.html" class="sb-body-child-link">
+                Our Products
               </a>
             </div>
             <div class="sidebar-body-child">
-              <a href="expertise.html" class="sb-body-child-link" id="first">
+              <a href="expertise.html" class="sb-body-child-link" id="fourth">
                 Our Expertise
               </a>
             </div>
@@ -57,9 +67,9 @@
               <div class="social-icon-container">
                 <a
                   href="https://youtube.com"
+                  target="_blank"
                   class="social-icon-link"
                   aria-label="YouTube"
-                  target="_blank"
                 >
                   <img
                     src="./Images/icon-youtube-white-1.png"
@@ -81,9 +91,9 @@
                 </a>
                 <a
                   href="https://www.linkedin.com/company/ibrion-chemicals-llc/"
+                  target="_blank"
                   class="social-icon-link"
                   aria-label="LinkedIn"
-                  target="_blank"
                 >
                   <img
                     src="./Images/icon-linkedin-white-1.png"
@@ -96,7 +106,6 @@
                   target="_blank"
                   class="social-icon-link"
                   aria-label="Facebook"
-                  target="_blank"
                 >
                   <img
                     src="./Images/facebook-v3.png"
@@ -105,11 +114,10 @@
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/ibrionchemllc/
-"
+                  href="https://www.instagram.com/ibrionchemllc/"
+                  target="_blank"
                   class="social-icon-link"
                   aria-label="Instagram"
-                  target="_blank"
                 >
                   <img
                     src="./Images/instagram-v2.png"
@@ -122,11 +130,34 @@
           </div>
         </div>
       </div>
+      <div class="navbar-main">
+        <div class="navbar-main-inner">
+          <a href="index.html" class="logo-link">
+            <img
+              src="./Images/Ibrion Chemicals LLC logo design.png"
+              alt="LDC Logo"
+              class="logo-img"
+            />
+          </a>
+          <nav class="nav-links">
+            <a href="index.html" class="nav-link link" id="Main_navbar_link_1"
+              >WHO WE ARE</a
+            >
+            <a href="expertise.html" class="nav-link link">OUR EXPERTISE</a>
+            <a href="products.html" class="nav-link link">OUR PRODUCTS</a>
+          </nav>
+        </div>
+      </div>
     </header>
-
     <section class="hero">
-      <div class="hero-grid"></div>
-      <div class="hero-content">
+      <div class="hero-overlay"></div>
+      <img
+        src="./Images/Contactus.jgp.png"
+        alt="LDC Flags"
+        class="hero-image"
+      />
+      <div class="hero-text">
+        <div class="hero-spacer"></div>
         <h1>Get in <em>Touch</em><br />With Our Team</h1>
       </div>
     </section>
@@ -196,7 +227,7 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">
+            <button type="submit" class="btn-submit-2">
               Send Message &rarr;
             </button>
           </form>
