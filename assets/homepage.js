@@ -2,7 +2,6 @@ const HambugerMenu = document.querySelector(".menu-icon");
 const sideBar = document.querySelector(".sidebar-parent");
 HambugerMenu.addEventListener("click", (e) => {
   e.stopPropagation();
-  serachbarIcon.classList.toggle("active");
   HambugerMenu.classList.toggle("active");
   sideBar.classList.toggle("active");
 
