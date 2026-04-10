@@ -2,8 +2,6 @@ const form = document.getElementById("contactForm");
 const toast = document.getElementById("toast");
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
   const required = form.querySelectorAll("[required]");
   let valid = true;
   required.forEach((el) => {
@@ -13,22 +11,16 @@ form.addEventListener("submit", function (e) {
       valid = false;
     }
   });
-  if (!valid) return;
+
+  if (!valid) {
+    e.preventDefault();
+    return;
+  }
 
   const btn = form.querySelector(".btn-submit");
   btn.textContent = "Sending…";
   btn.style.opacity = ".7";
   btn.disabled = true;
-
-  setTimeout(() => {
-    form.reset();
-    btn.textContent = "Send Message →";
-    btn.style.opacity = "1";
-    btn.disabled = false;
-
-    toast.classList.add("show");
-    setTimeout(() => toast.classList.remove("show"), 4000);
-  }, 1200);
 });
 
 const HambugerMenu = document.querySelector(".menu-icon");
