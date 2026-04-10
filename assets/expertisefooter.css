@@ -62,9 +62,9 @@ body {
 }
 .footer-nav a {
   font-size: 0.75rem;
+  font-family: var(--font-body);
   font-weight: 400;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
   color: rgba(245, 240, 232, 0.45);
   text-decoration: none;
   display: inline-flex;
@@ -105,10 +105,10 @@ body {
 }
 
 .footer-connect-label {
-  font-size: 0.62rem;
+  font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.22em;
-  text-transform: uppercase;
+  font-family: var(--font-body);
   color: var(--gold);
 }
 
@@ -169,6 +169,7 @@ body {
 .footer-copy {
   font-size: 0.68rem;
   font-weight: 300;
+  font-family: var(--font-body);
   letter-spacing: 0.05em;
   color: rgba(245, 240, 232, 0.25);
 }
@@ -180,6 +181,7 @@ body {
 .footer-bottom-links a {
   font-size: 0.65rem;
   font-weight: 300;
+  font-family: var(--font-body);
   letter-spacing: 0.08em;
   color: rgba(245, 240, 232, 0.22);
   text-decoration: none;

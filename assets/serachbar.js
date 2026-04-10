@@ -4,7 +4,6 @@ const searchbar = document.querySelector(".searchbar-parent");
 const serachbarIcon = document.querySelector(".searchbar-icon");
 const backdrop = document.getElementById("search-backdrop");
 const searchField = document.getElementById("searchField");
-const searchbarIcon = document.querySelector(".searchbar-icon");
 const recommended = document.getElementById("recommended");
 function openSearch() {
   searchbar.classList.add("active");
@@ -21,6 +20,16 @@ function closeSearch() {
   recommended.classList.remove("show");
   searchbar.classList.remove("active");
   backdrop.classList.remove("active");
+}
+
+function closeSidebar() {
+  if (sideBar.classList.contains("active")) {
+    sideBar.classList.remove("active");
+    HambugerMenu.classList.remove("active");
+    serachbarIcon.classList.remove("active");
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
+  }
 }
 
 searchButton.addEventListener("click", (e) => {
@@ -42,7 +51,7 @@ const HambugerMenu = document.querySelector(".menu-icon");
 const sideBar = document.querySelector(".sidebar-parent");
 HambugerMenu.addEventListener("click", (e) => {
   e.stopPropagation();
-  serachbarIcon.classList.add("active");
+  serachbarIcon.classList.toggle("active");
   HambugerMenu.classList.toggle("active");
   sideBar.classList.toggle("active");
 
@@ -65,7 +74,7 @@ sideBar.addEventListener("click", (e) => {
   e.stopPropagation();
 });
 document.addEventListener("click", () => {
-  sideBar.classList.remove("active");
+  closeSidebar();
 });
 searchField.addEventListener("click", (e) => {
   e.stopPropagation();
@@ -258,20 +267,31 @@ function buildRecommendedList(items) {
       item.style.color = "var(--color-text-primary)";
     });
     item.addEventListener("click", () => {
-      navigateToProduct(name);
       closeSearch();
+      closeSidebar();
+      navigateToProduct(name);
     });
     recommendedDiv.appendChild(item);
   });
 }
 
+function normalizeText(text) {
+  return text.replace(/\s+/g, " ").trim().toLowerCase();
+}
+
 function navigateToProduct(productName) {
   const allTextDivs = document.querySelectorAll(".product-text");
+  const targetName = normalizeText(productName);
   for (const div of allTextDivs) {
-    if (div.textContent.trim().toLowerCase() === productName.toLowerCase()) {
+    const itemName = normalizeText(div.textContent);
+    if (
+      itemName === targetName ||
+      itemName.includes(targetName) ||
+      targetName.includes(itemName)
+    ) {
       const container = div.closest(".product-container");
       if (container) {
-        container.scrollIntoView({ behavior: "smooth", block: "start" });
+        container.scrollIntoView({ behavior: "smooth", block: "center" });
         setTimeout(() => {
           container.style.outline = "none";
         }, 1800);
