@@ -29,16 +29,7 @@ body {
   grid-template-columns: 45% 55%;
   min-height: 460px;
   overflow: hidden;
-  opacity: 0;
-  transform: translateY(36px);
-  transition:
-    opacity 0.75s ease,
-    transform 0.75s ease;
   border-bottom: 1px solid var(--mist);
-}
-.expertise-section.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 .expertise-section:nth-child(even) .expertise-accent {
   order: 2;
