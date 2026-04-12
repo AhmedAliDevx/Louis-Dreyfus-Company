@@ -94,7 +94,8 @@ function handleSearchInput() {
   if (!filtered.length) {
     const noResult = document.createElement("div");
     noResult.className = "rec-item";
-    noResult.textContent = "No products found";
+    noResult.innerHTML =
+      "No products found. Please contact us at <strong>trade@ibrionchem.com</strong> for further assistance.";
     noResult.style.cssText = `
       padding: 10px 0;
       font-size: 15px;
@@ -316,7 +317,8 @@ function handleSearchInput() {
   if (!filtered.length) {
     const noResult = document.createElement("div");
     noResult.className = "rec-item";
-    noResult.textContent = "No products found";
+    noResult.innerHTML =
+      "No products found. Please contact us at <strong>trade@ibrionchem.com</strong> for further assistance.";
     noResult.style.cssText = `
       padding: 10px 0;
       font-size: 15px;
