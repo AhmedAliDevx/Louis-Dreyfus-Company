@@ -95,7 +95,7 @@ function handleSearchInput() {
     const noResult = document.createElement("div");
     noResult.className = "rec-item";
     noResult.innerHTML =
-      "No products found. Please contact us at <strong>trade@ibrionchem.com</strong> for further assistance.";
+      'No products found. Please contact us at <a href="mailto:trade@ibrionchem.com" style="color: inherit; text-decoration: underline;">trade@ibrionchem.com</a> for further assistance.';
     noResult.style.cssText = `
       padding: 10px 0;
       font-size: 15px;
@@ -318,7 +318,7 @@ function handleSearchInput() {
     const noResult = document.createElement("div");
     noResult.className = "rec-item";
     noResult.innerHTML =
-      "No products found. Please contact us at <strong>trade@ibrionchem.com</strong> for further assistance.";
+      'No products found. Please contact us at <a  href="https://mail.google.com/mail/?view=cm&to=trade@ibrionchem.com" target="_blank" style="color: black; font-weight: 800; cursor: pointer; text-decoration: none;" >trade@ibrionchem.com</a> for further assistance.';
     noResult.style.cssText = `
       padding: 10px 0;
       font-size: 15px;

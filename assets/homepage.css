@@ -259,7 +259,7 @@ header {
 .search-field input {
   flex: 1;
   min-width: 0;
-  font-family: "Playfair Display", serif;
+  font-family: var(--font-body);
   font-size: 22px;
   font-weight: 400;
   color: #3a3632;
@@ -358,14 +358,15 @@ header {
   }
   .ldc-logo {
     text-decoration: none;
+    font-family: var(--font-body);
     color: var(--font-color);
   }
   .ldc-logo-text {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-body);
     font-size: 30px;
   }
   .ldc-logo-sub {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-body);
     font-size: 5px;
   }
   .inner-2-icon {
@@ -462,6 +463,7 @@ header {
     text-decoration: none;
     text-transform: capitalize;
     font-size: 20px;
+    font-weight: 400;
     font-weight: lighter;
     line-height: 1.5em;
     color: var(--black-font-color);
